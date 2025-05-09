@@ -1,0 +1,179 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    max-width: 80%;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 20px;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    background: #e3e3e3;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 220px;
+    height: 160px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Forms */
+form {
+    max-width: 450px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form input:focus, form select:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+form button {
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #003d80;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section, .carousel-item, .gallery img, form {
+    animation: fadeIn 0.8s ease-in-out;
+}

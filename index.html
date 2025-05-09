@@ -1,0 +1,116 @@
+<!-- html code for college event management system interface  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the College Event Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Manage and participate in college events seamlessly.</p>
+        </section>
+        <section id="events">
+            <h2>Events</h2>
+            <p>Explore upcoming events and register to participate.</p>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <h3>VISIOTECH 2025</h3>
+                    <p>Join us for a day of innovation and technology.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>JHANKAAR 2025</h3
+
+                    <p>Experience the vibrant culture of our college.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Sports Meet</h3>
+                    <p>Showcase your athletic skills and team spirit.</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Take a look at some memorable moments from past events.</p>
+            <div class="gallery">
+                <img src="1200px-Sunflower_from_Silesia2.jpg" alt="Event 1">
+
+                <img src="images/event2.jpg" alt="Event 2">
+                <img src="images/event3.jpg" alt="Event 3">
+            </div>
+        </section>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3>How do I register for an event?</h3>
+                <p>You can register for an event by filling out the registration form in the Contact section.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are there any fees for participation?</h3>
+                <p>Most events are free, but some may have a nominal fee. Check the event details for more information.</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Learn more about our event management system.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with us for any queries or support.</p>
+            <form id="registration-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" style="font-family: Arial, sans-serif;">
+                    <option value="VISIOTECH" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Visiotech</option>
+                    <option value="JHANKAAR" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Jhankaar 2025</option>
+                    <option value="sports" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Sports</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section id="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with the latest events and news.</p>
+            <form id="newsletter-form">
+                <label for="newsletter-email">Email:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"The event management system made it so easy to participate in events!"</p>
+                <p>- Student A</p>
+            </div>
+            <div class="testimonial">
+                <p>"I loved how organized everything was. Great experience!"</p>
+                <p>- Student B</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 MGM's College Of Engineering, Nanded. All rights reserved.</p>
+    </footer>
+</body>
+</html>
